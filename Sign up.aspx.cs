@@ -37,6 +37,7 @@ namespace FUE
         protected void Button1_Click(object sender, EventArgs e)
         {
 
+            Response.Redirect("contact information.aspx");
         }
 
         protected void TextBox4_TextChanged(object sender, EventArgs e)

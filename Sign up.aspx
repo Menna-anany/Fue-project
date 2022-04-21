@@ -1,6 +1,14 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Sign up.aspx.cs" Inherits="FUE.Sign_up" %>
 
 <!DOCTYPE html>
+<script runat="server">
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+</script>
+
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -16,10 +24,6 @@
         .auto-style12 {
             height: 76px;
             width: 417px;
-        }
-        .auto-style44 {
-            width: 417px;
-            height: 111px;
         }
         .auto-style65 {
             height: 22px;
@@ -81,10 +85,6 @@
             height: 16px;
             width: 328px;
         }
-        .auto-style165 {
-            width: 328px;
-            height: 111px;
-        }
         .auto-style166 {
             height: 40px;
             width: 328px;
@@ -102,7 +102,7 @@
         }
         .auto-style175 {
             height: 39px;
-            width: 78px;
+            width: 164px;
         }
         .auto-style179 {
             height: 17px;
@@ -111,10 +111,6 @@
         .auto-style180 {
             height: 17px;
             width: 417px;
-        }
-        .auto-style181 {
-            height: 39px;
-            width: 214px;
         }
         .auto-style184 {
             height: 28px;
@@ -156,12 +152,39 @@
         .auto-style190 {
             text-align: center;
         }
+        .auto-style191 {
+            height: 45px;
+            width: 328px;
+        }
+        .auto-style192 {
+            height: 45px;
+            width: 417px;
+        }
+        .auto-style194 {
+            height: 39px;
+            width: 361px;
+        }
+        .auto-style195 {
+            height: 22px;
+            width: 361px;
+        }
+        .auto-style196 {
+            height: 54px;
+            width: 328px;
+        }
+        .auto-style197 {
+            height: 54px;
+            width: 417px;
+        }
     </style>
 </head>
 <body>
+
+
+
     <form id="form1" runat="server">
         <div style="font-family: 'Bahnschrift Light'; font-size: large; color: #000000">
-            <h2 style="box-sizing: border-box; font-family: arial; font-weight: normal; line-height: 1.1; color: rgb(68, 68, 68); margin: 0px 0px 25px; font-size: 17px; padding: 20px 15px 15px; border-bottom: 1px solid rgb(179, 27, 27); background: rgb(238, 238, 238); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" class="auto-style6">Personal Information</h2>
+            &nbsp;<h2 style="box-sizing: border-box; font-family: arial; font-weight: normal; line-height: 1.1; color: rgb(68, 68, 68); margin: 0px 0px 25px; font-size: 17px; padding: 20px 15px 15px; border-bottom: 1px solid rgb(179, 27, 27); background: rgb(238, 238, 238); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" class="auto-style6">Personal Information</h2>
         </div>
         <br />
         <table class="auto-style187">
@@ -205,7 +228,18 @@
                         <asp:ListItem>First Term 2022/2023</asp:ListItem>
                     </asp:DropDownList>
                 </td>
-                <td class="auto-style65" colspan="2"></td>
+                <td class="auto-style195">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style157" colspan="2">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlSemester" ErrorMessage="Please enter semester" ForeColor="#990000"></asp:RequiredFieldValidator>
+                </td>
+                <td class="auto-style195">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style157" colspan="2">
+                    &nbsp;</td>
+                <td class="auto-style195">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style156" colspan="2"><span style="color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">(Please write your name as it appears on the Birth Certificate or Passport)</span></td>
@@ -217,16 +251,44 @@
             </tr>
             <tr>
                 <td class="auto-style175" style="color: rgb(68, 68, 68); font-family: Arial; font-size: 13px; font-weight: 400; font-style: normal; text-transform: none">
-                    <asp:TextBox ID="txtFirstName" runat="server" OnTextChanged="TextBox4_TextChanged" TextMode="Search">First Name</asp:TextBox>
+                    <asp:TextBox ID="txtFirstName" runat="server" OnTextChanged="TextBox4_TextChanged"></asp:TextBox>
                 </td>
                 <td class="auto-style174" style="color: rgb(68, 68, 68); font-family: Arial; font-size: 13px; font-weight: 400; font-style: normal; text-transform: none">
-                    <asp:TextBox ID="txtMiddleName1" runat="server" CssClass="auto-style173" TextMode="Search">Middle Name1</asp:TextBox>
+                    <asp:TextBox ID="txtMiddleName1" runat="server" CssClass="auto-style173"></asp:TextBox>
                 </td>
-                <td class="auto-style181" style="color: rgb(68, 68, 68); font-family: Arial; font-size: 13px; font-weight: 400; font-variant: normal; text-transform: none">
-                    <asp:TextBox ID="txtMiddleName2" runat="server" CssClass="auto-style173" TextMode="Search">Middle Name2</asp:TextBox>
+                <td class="auto-style194" style="color: rgb(68, 68, 68); font-family: Arial; font-size: 13px; font-weight: 400; font-variant: normal; text-transform: none">
+                    <asp:TextBox ID="txtMiddleName2" runat="server" CssClass="auto-style173"></asp:TextBox>
                 </td>
                 <td class="auto-style68" style="color: rgb(68, 68, 68); font-family: Arial; font-size: 13px; font-weight: 400; font-variant: normal; text-transform: none">
-                    <asp:TextBox ID="txtLastName" runat="server" OnTextChanged="TextBox9_TextChanged" TextMode="Search">Last Name</asp:TextBox>
+                    <asp:TextBox ID="txtLastName" runat="server" OnTextChanged="TextBox9_TextChanged"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style175" style="color: rgb(68, 68, 68); font-family: Arial; font-size: 13px; font-weight: 400; font-style: normal; text-transform: none">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtFirstName" ErrorMessage="please enter your first name" ForeColor="#990000"></asp:RequiredFieldValidator>
+                </td>
+                <td class="auto-style174" style="color: rgb(68, 68, 68); font-family: Arial; font-size: 13px; font-weight: 400; font-style: normal; text-transform: none">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtMiddleName1" ErrorMessage="please enter your middle name" ForeColor="#990000"></asp:RequiredFieldValidator>
+                </td>
+                <td class="auto-style194" style="color: rgb(68, 68, 68); font-family: Arial; font-size: 13px; font-weight: 400; font-variant: normal; text-transform: none">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtMiddleName2" ErrorMessage="please enter your middle name" ForeColor="#990000"></asp:RequiredFieldValidator>
+                </td>
+                <td class="auto-style68" style="color: rgb(68, 68, 68); font-family: Arial; font-size: 13px; font-weight: 400; font-variant: normal; text-transform: none">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtLastName" ErrorMessage="please enter your last name" ForeColor="#990000"></asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style175" style="color: rgb(68, 68, 68); font-family: Arial; font-size: 13px; font-weight: 400; font-style: normal; text-transform: none">
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtFirstName" ErrorMessage="Invalid first name format" ForeColor="#990000" ValidationExpression="[A-Z][*a-z]"></asp:RegularExpressionValidator>
+                </td>
+                <td class="auto-style174" style="color: rgb(68, 68, 68); font-family: Arial; font-size: 13px; font-weight: 400; font-style: normal; text-transform: none">
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtMiddleName1" ErrorMessage="Invalid name format" ForeColor="#990000" ValidationExpression="[A-Z][*a-z]"></asp:RegularExpressionValidator>
+                </td>
+                <td class="auto-style194" style="color: rgb(68, 68, 68); font-family: Arial; font-size: 13px; font-weight: 400; font-variant: normal; text-transform: none">
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txtMiddleName2" ErrorMessage="Invalid name format" ForeColor="#990000" ValidationExpression="[A-Z][*a-z]"></asp:RegularExpressionValidator>
+                </td>
+                <td class="auto-style68" style="color: rgb(68, 68, 68); font-family: Arial; font-size: 13px; font-weight: 400; font-variant: normal; text-transform: none">
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="txtLastName" ErrorMessage="Invalid last name format" ForeColor="#990000" ValidationExpression="[A-Z][*a-z]"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
@@ -255,6 +317,13 @@
                 </td>
             </tr>
             <tr>
+                <td class="auto-style159" colspan="2">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="ddlNationality" ErrorMessage="please enter your nationality" ForeColor="#990000"></asp:RequiredFieldValidator>
+                </td>
+                <td class="auto-style79" colspan="2">
+                    &nbsp;</td>
+            </tr>
+            <tr>
                 <td class="auto-style162" colspan="2"><span style="color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">National ID*</span></td>
                 <td class="auto-style85" colspan="2"><span style="color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Expiry Date*</span></td>
             </tr>
@@ -267,23 +336,30 @@
                 </td>
             </tr>
             <tr>
+                <td class="auto-style163" colspan="2">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtNationalID" ErrorMessage="please enter your national ID" ForeColor="#990000"></asp:RequiredFieldValidator>
+                </td>
+                <td class="auto-style88" colspan="2">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txtExpiryDate" ErrorMessage="please enter expiary date" ForeColor="#990000"></asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style163" colspan="2">
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="txtNationalID" ForeColor="#990000" ValidationExpression="\d{3}-\d{2}-\d{4}">Invalid national ID format</asp:RegularExpressionValidator>
+                </td>
+                <td class="auto-style88" colspan="2">
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="txtExpiryDate" ErrorMessage="invalid date" ForeColor="#990000"></asp:RegularExpressionValidator>
+                </td>
+            </tr>
+            <tr>
                 <td class="auto-style160" colspan="2"><span style="color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Date of Birth<span>&nbsp;</span></span><span style="box-sizing: border-box; transition: all 0.2s ease-in 0s; color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">(dd/MM/yyyy)</span></td>
                 <td class="auto-style76" colspan="2"><span style="color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Country of Birth</span></td>
             </tr>
             <tr>
-                <td class="auto-style165" colspan="2">
-                    <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="#999999" CellPadding="4" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" Height="180px" Width="200px">
-                        <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" />
-                        <NextPrevStyle VerticalAlign="Bottom" />
-                        <OtherMonthDayStyle ForeColor="#808080" />
-                        <SelectedDayStyle BackColor="#666666" Font-Bold="True" ForeColor="White" />
-                        <SelectorStyle BackColor="#CCCCCC" />
-                        <TitleStyle BackColor="#999999" BorderColor="Black" Font-Bold="True" />
-                        <TodayDayStyle BackColor="#CCCCCC" ForeColor="Black" />
-                        <WeekendDayStyle BackColor="#FFFFCC" />
-                    </asp:Calendar>
+                <td class="auto-style191" colspan="2">
+                    <asp:TextBox ID="txtDateOfBirth" runat="server" Height="35px" TextMode="Date" Width="503px"></asp:TextBox>
                 </td>
-                <td class="auto-style44" colspan="2">
+                <td class="auto-style192" colspan="2">
                     <asp:DropDownList ID="ddlCountryOfBirth" runat="server" Width="503px" Height="35px">
                         <asp:ListItem>Select Country</asp:ListItem>
                         <asp:ListItem>Egypt</asp:ListItem>
@@ -295,6 +371,21 @@
                         <asp:ListItem>South Korea</asp:ListItem>
                     </asp:DropDownList>
                 </td>
+            </tr>
+            <tr>
+                <td class="auto-style191" colspan="2">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtDateOfBirth" ErrorMessage="please enter your birth date" ForeColor="#990000"></asp:RequiredFieldValidator>
+                </td>
+                <td class="auto-style192" colspan="2">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ErrorMessage="please enter country of birth" ForeColor="#990000" ControlToValidate="ddlCountryOfBirth"></asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style191" colspan="2">
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator7" runat="server" ControlToValidate="txtDateOfBirth" ErrorMessage="Invalid date" ForeColor="#990000" ValidationExpression="^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d$"></asp:RegularExpressionValidator>
+                </td>
+                <td class="auto-style192" colspan="2">
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style166" colspan="2"><span style="color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Marital Status*</span></td>
@@ -312,6 +403,14 @@
                 </td>
                 <td class="auto-style100" colspan="2">
                     <asp:TextBox ID="txtCityOfBirth" runat="server" Width="503px" Height="35px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style196" colspan="2">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="ddlMaritalStatus" ErrorMessage="please enter marital status" ForeColor="#990000"></asp:RequiredFieldValidator>
+                </td>
+                <td class="auto-style197" colspan="2">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="txtCityOfBirth" ErrorMessage="please enter city of birth" ForeColor="#990000"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -336,6 +435,14 @@
                         <asp:ListItem>Twitter</asp:ListItem>
                         <asp:ListItem>Instagram</asp:ListItem>
                     </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style188" colspan="2">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ErrorMessage="please enter your gender" ForeColor="#990000" ControlToValidate="ddlGender"></asp:RequiredFieldValidator>
+                </td>
+                <td class="auto-style189" colspan="2">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ControlToValidate="ddlAboutUs" ErrorMessage="please select hear from" ForeColor="#990000"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>

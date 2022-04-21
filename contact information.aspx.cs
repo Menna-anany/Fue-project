@@ -17,6 +17,8 @@ namespace FUE
         protected void Button1_Click(object sender, EventArgs e)
         {
 
+            Response.Redirect("Sign up.aspx");
+
         }
 
         protected void TextBox7_TextChanged(object sender, EventArgs e)
@@ -36,6 +38,13 @@ namespace FUE
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        protected void btnNext_Click(object sender, EventArgs e)
+        {
+
+            Response.Redirect("admission information.aspx");
 
         }
     }

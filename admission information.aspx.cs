@@ -17,6 +17,9 @@ namespace FUE
         protected void Button1_Click(object sender, EventArgs e)
         {
 
+
+            Response.Redirect("contact information.aspx");
+
         }
 
         protected void Button1_Click1(object sender, EventArgs e)
@@ -31,6 +34,13 @@ namespace FUE
 
         protected void Button3_Click(object sender, EventArgs e)
         {
+
+        }
+
+        protected void btnNext_Click(object sender, EventArgs e)
+        {
+
+            Response.Redirect("parent information.aspx");
 
         }
     }

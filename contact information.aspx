@@ -27,42 +27,35 @@
             float: left;
         }
         .auto-style15 {
-            width: 707px;
+            width: 559px;
             height: 67px;
         }
         .auto-style16 {
             height: 67px;
         }
         .auto-style36 {
-            width: 707px;
+            width: 559px;
             height: 27px;
         }
         .auto-style37 {
             height: 27px;
         }
         .auto-style38 {
-            width: 707px;
+            width: 559px;
             height: 56px;
         }
         .auto-style39 {
             height: 56px;
         }
-        .auto-style40 {
-            width: 707px;
-            height: 22px;
-        }
-        .auto-style41 {
-            height: 22px;
-        }
         .auto-style44 {
-            width: 707px;
+            width: 559px;
             height: 12px;
         }
         .auto-style45 {
             height: 12px;
         }
         .auto-style46 {
-            width: 707px;
+            width: 559px;
             height: 49px;
         }
         .auto-style47 {
@@ -73,42 +66,35 @@
             height: 918px;
         }
         .auto-style55 {
-            width: 707px;
+            width: 559px;
             height: 18px;
         }
         .auto-style56 {
             height: 18px;
         }
-        .auto-style57 {
-            width: 707px;
-            height: 68px;
-        }
-        .auto-style61 {
-            height: 68px;
-        }
         .auto-style66 {
-            width: 707px;
+            width: 559px;
             height: 42px;
         }
         .auto-style67 {
             height: 42px;
         }
         .auto-style68 {
-            width: 707px;
+            width: 559px;
             height: 35px;
         }
         .auto-style69 {
             height: 35px;
         }
         .auto-style70 {
-            width: 707px;
+            width: 559px;
             height: 57px;
         }
         .auto-style71 {
             height: 57px;
         }
         .auto-style72 {
-            width: 707px;
+            width: 559px;
             height: 20px;
         }
         .auto-style73 {
@@ -120,6 +106,34 @@
         }
         .auto-style75 {
             width: 416%;
+        }
+        .auto-style76 {
+            width: 559px;
+            height: 36px;
+        }
+        .auto-style77 {
+            height: 36px;
+        }
+        .auto-style78 {
+            width: 559px;
+            height: 39px;
+        }
+        .auto-style79 {
+            height: 39px;
+        }
+        .auto-style80 {
+            width: 559px;
+            height: 22px;
+        }
+        .auto-style81 {
+            height: 22px;
+        }
+        .auto-style82 {
+            width: 559px;
+            height: 54px;
+        }
+        .auto-style83 {
+            height: 54px;
         }
     </style>
 </head>
@@ -185,6 +199,13 @@
                     </td>
                 </tr>
                 <tr>
+                    <td class="auto-style66">
+                        &nbsp;</td>
+                    <td class="auto-style67">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtAddress" ErrorMessage="please enter your address" ForeColor="#990000"></asp:RequiredFieldValidator>
+                    </td>
+                </tr>
+                <tr>
                     <td class="auto-style44"><span style="color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Building Number<span>&nbsp;</span></span><span style="box-sizing: border-box; transition: all 0.2s ease-in 0s; color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">رقم 
                         المبنى*</span></td>
                     <td class="auto-style45"><span style="color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Street<span>&nbsp;</span></span><span style="box-sizing: border-box; transition: all 0.2s ease-in 0s; color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">الشارع</span></td>
@@ -195,6 +216,14 @@
                     </td>
                     <td class="auto-style47">
                         <asp:TextBox ID="txtStreet" runat="server" Width="503px" Height="35px" OnTextChanged="TextBox7_TextChanged"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style46">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtBuilding" ErrorMessage="please enter your building number" ForeColor="#990000"></asp:RequiredFieldValidator>
+                    </td>
+                    <td class="auto-style47">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtStreet" ErrorMessage="please enter your street" ForeColor="#990000"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -211,21 +240,44 @@
                     </td>
                 </tr>
                 <tr>
+                    <td class="auto-style70">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txtApt" ErrorMessage="please enter your apartement number" ForeColor="#990000"></asp:RequiredFieldValidator>
+                    </td>
+                    <td class="auto-style71">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtDistrict" ErrorMessage="please enter your district" ForeColor="#990000"></asp:RequiredFieldValidator>
+                    </td>
+                </tr>
+                <tr>
                     <td class="auto-style55"><span style="color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">City<span>&nbsp;</span></span><span style="box-sizing: border-box; transition: all 0.2s ease-in 0s; color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">المدينة*</span></td>
                     <td class="auto-style56"><span style="color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Telephone<span>&nbsp;</span></span><span style="box-sizing: border-box; transition: all 0.2s ease-in 0s; color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">التليفون</span></td>
                 </tr>
                 <tr>
-                    <td class="auto-style57">
+                    <td class="auto-style76">
                         <asp:TextBox ID="txtCity" runat="server" Width="503px" Height="35px" style="height: 22px"></asp:TextBox>
                     </td>
-                    <td class="auto-style61">
+                    <td class="auto-style77">
                         <asp:TextBox ID="txtTelephone" runat="server" Width="503px" Height="35px"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style40"><span style="color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Student&#39;s Mobile<span>&nbsp;</span></span><span style="box-sizing: border-box; transition: all 0.2s ease-in 0s; color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">موبايل 
+                    <td class="auto-style72">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="txtCity" ErrorMessage="please enter your city" ForeColor="#990000"></asp:RequiredFieldValidator>
+                    </td>
+                    <td class="auto-style73">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="txtTelephone" ErrorMessage="please enter your telephone" ForeColor="#990000"></asp:RequiredFieldValidator>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style72">
+                        &nbsp;</td>
+                    <td class="auto-style73">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txtTelephone" ErrorMessage="Invalid telephone number" ForeColor="#990000" ValidationExpression="/^[0-9]\d{2,4}-\d{6,8}$/"></asp:RegularExpressionValidator>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style78"><span style="color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Student&#39;s Mobile<span>&nbsp;</span></span><span style="box-sizing: border-box; transition: all 0.2s ease-in 0s; color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">موبايل 
                         الطالب*</span></td>
-                    <td class="auto-style41"><span style="color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Email Address<span>&nbsp;</span></span><span style="box-sizing: border-box; transition: all 0.2s ease-in 0s; color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">البريد 
+                    <td class="auto-style79"><span style="color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Email Address<span>&nbsp;</span></span><span style="box-sizing: border-box; transition: all 0.2s ease-in 0s; color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">البريد 
                         الإلكترونى للطالب</span></td>
                 </tr>
                 <tr>
@@ -234,6 +286,22 @@
                     </td>
                     <td class="auto-style39">
                         <asp:TextBox ID="txtEmail" runat="server" Width="503px" Height="35px"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style80">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtStudentMobile" ErrorMessage="Invalid phone number" ForeColor="#990000" ValidationExpression="[0][1][0-2][0-24-9]\s\d{7}"></asp:RegularExpressionValidator>
+                    </td>
+                    <td class="auto-style81">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="Invalid email" ControlToValidate="txtEmail" ForeColor="#990000" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style82">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="txtStudentMobile" ErrorMessage="please enter your mobile" ForeColor="#990000"></asp:RequiredFieldValidator>
+                    </td>
+                    <td class="auto-style83">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ControlToValidate="txtEmail" ErrorMessage="please enter your email" ForeColor="#990000"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -253,10 +321,25 @@
                     </td>
                 </tr>
                 <tr>
+                    <td class="auto-style36">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ControlToValidate="txtReenterEmail" ErrorMessage="please re-enter your email" ForeColor="#990000"></asp:RequiredFieldValidator>
+                    </td>
+                    <td class="auto-style37">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ControlToValidate="ddlSiblings" ErrorMessage="please fill in this field" ForeColor="#990000"></asp:RequiredFieldValidator>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style36">
+                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtEmail" ControlToValidate="txtReenterEmail" ErrorMessage="please re-type your email" ForeColor="#990000"></asp:CompareValidator>
+                    </td>
+                    <td class="auto-style37">
+                        &nbsp;</td>
+                </tr>
+                <tr>
                     <td class="auto-style15"></td>
                     <td class="auto-style16">
                         <asp:Button ID="btnBack" runat="server" BackColor="#990000" ForeColor="White" OnClick="Button1_Click" Text="Back" Width="65px" />
-&nbsp;<asp:Button ID="btnNext" runat="server" BackColor="#990000" ForeColor="White" Text="Next" Width="58px" />
+&nbsp;<asp:Button ID="btnNext" runat="server" BackColor="#990000" ForeColor="White" Text="Next" Width="58px" OnClick="btnNext_Click" />
                     </td>
                 </tr>
             </table>

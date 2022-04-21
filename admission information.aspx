@@ -6,25 +6,12 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
         .auto-style11 {
             width: 1271px;
             float: left;
         }
         .auto-style12 {
             height: 121px;
-        }
-        .auto-style184 {
-            float: left;
-            width: 70px;
-        }
-        .auto-style185 {
-            width: 69px;
-            float: left;
-            height: 4px;
-            text-align: justify;
         }
         .auto-style187 {
             margin-left: 0px;
@@ -68,32 +55,13 @@
             height: 199px;
             text-align: left;
         }
-        .auto-style202 {
-            height: 73px;
+        .auto-style75 {
+            width: 100%;
         }
-        .auto-style203 {
-            width: 70px;
-            float: left;
-            height: 39px;
-            text-align: center;
+        .auto-style8 {
+            height: 80px;
         }
-        .auto-style204 {
-            width: 70px;
-            float: left;
-            height: 31px;
-            text-align: justify;
-        }
-        .auto-style205 {
-            float: left;
-            width: 70px;
-            height: 100px;
-        }
-        .auto-style206 {
-            float: left;
-            width: 69px;
-            height: 90px;
-        }
-    </style>
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -106,37 +74,28 @@
                 </tr>
                 <tr>
                     <td class="auto-style201" colspan="2">
-        <table class="auto-style1">
-            <tr>
-                <td class="auto-style202">
-                    <li id="ctl00_ContentPlaceHolder1_ctrApplyOnline_libPersonalInfoStep" class="auto-style206" style="box-sizing: border-box; list-style: none; padding: 0px; margin: 0px 20px; color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
-                        <p style="box-sizing: border-box; margin: 0px; transition: all 0.2s ease-in 0s; padding: 10px 0px; " class="auto-style203">
-                            <asp:Button ID="btnStep1" runat="server" BackColor="#993300" ForeColor="White" Height="38px" Text="1" Width="33px" />
-                        </p>
-                        <asp:Label ID="Label1" runat="server" Text="Step 1"></asp:Label>
-                    </li>
-                    <li id="ctl00_ContentPlaceHolder1_ctrApplyOnline_liContactInfoStep" style="box-sizing: border-box; float: left; width: 70px; list-style: none; padding: 0px; margin: 0px 20px; color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
-                        <p style="box-sizing: border-box; margin: 0px; transition: all 0.2s ease-in 0s; padding: 10px 0px; width: 70px; float: left; text-align: center;">
-                            <asp:Button ID="btnStep2" runat="server" BackColor="#990000" ForeColor="White" Height="38px" Text="2" Width="33px" />
-                        </p>
-                        <asp:Label ID="Label2" runat="server" Text="Step 2"></asp:Label>
-                    </li>
-                    <li id="ctl00_ContentPlaceHolder1_ctrApplyOnline_liAdmissionsInformationStep" style="box-sizing: border-box; list-style: none; padding: 0px; margin: 0px 20px; color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" class="auto-style205">
-                        <p style="box-sizing: border-box; margin: 0px; transition: all 0.2s ease-in 0s; padding: 10px 0px; width: 70px; float: left; text-align: center;">
-                            <asp:Button ID="btnStep3" runat="server" BackColor="#990000" ForeColor="White" Height="38px" OnClick="Button3_Click" Text="3" Width="33px" />
-                        </p>
-                        <asp:Label ID="Label3" runat="server" Text="Step 3"></asp:Label>
-                    </li>
-                    <li id="ctl00_ContentPlaceHolder1_ctrApplyOnline_liParentInformation" style="box-sizing: border-box; list-style: none; padding: 0px; margin: 0px 20px; color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" class="auto-style184">
-                        <p style="box-sizing: border-box; transition: all 0.2s ease-in 0s; padding: 10px 0px; margin-right: 0px; margin-top: 0px; margin-bottom: 0px;" class="auto-style204">
-                            <asp:Button ID="btnStep4" runat="server" BackColor="#990000" ForeColor="White" Height="38px" OnClick="Button4_Click" Text="4" Width="33px" />
-                        </p>
-                        <p style="box-sizing: border-box; margin: 0px; transition: all 0.2s ease-in 0s; padding: 10px 0px; " class="auto-style185">
-                            Step 4</p>
-                    </li>
-                </td>
-            </tr>
-        </table>
+            <table class="auto-style75">
+                <tr>
+                    <td class="auto-style8">
+                        <li id="ctl00_ContentPlaceHolder1_ctrApplyOnline_libPersonalInfoStep" class="" style="box-sizing: border-box; float: left; width: 70px; list-style: none; padding: 0px; margin: 0px 20px; color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+                            <a id="ctl00_ContentPlaceHolder1_ctrApplyOnline_lnkbPersonalInfoStep" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$ctrApplyOnline$lnkbPersonalInfoStep','')" style="box-sizing: border-box; background: rgb(229, 229, 229); color: rgb(68, 68, 68); text-decoration: none; transition: all 0.2s ease-in 0s; cursor: pointer !important; width: 40px; height: 40px; line-height: 40px; border-radius: 50%; text-align: center; padding: 0px; margin: 0px; display: inline-block;">1</a><p style="box-sizing: border-box; margin: 0px; transition: all 0.2s ease-in 0s; padding: 10px 0px; width: 70px; float: left; text-align: center;">
+                                Step One</p>
+                        </li>
+                        <li id="ctl00_ContentPlaceHolder1_ctrApplyOnline_liContactInfoStep" class="" style="box-sizing: border-box; float: left; width: 70px; list-style: none; padding: 0px; margin: 0px 20px; color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+                            <a id="ctl00_ContentPlaceHolder1_ctrApplyOnline_lnkbContactInfoStep" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$ctrApplyOnline$lnkbContactInfoStep','')" style="box-sizing: border-box; background: rgb(229, 229, 229); color: rgb(68, 68, 68); text-decoration: none; transition: all 0.2s ease-in 0s; cursor: pointer !important; width: 40px; height: 40px; line-height: 40px; border-radius: 50%; text-align: center; padding: 0px; margin: 0px; display: inline-block;">2</a><p style="box-sizing: border-box; margin: 0px; transition: all 0.2s ease-in 0s; padding: 10px 0px; width: 70px; float: left; text-align: center;">
+                                Step Two</p>
+                        </li>
+                        <li id="ctl00_ContentPlaceHolder1_ctrApplyOnline_liAdmissionsInformationStep" class="active" style="box-sizing: border-box; float: left; width: 70px; list-style: none; padding: 0px; margin: 0px 20px; color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+                            <a id="ctl00_ContentPlaceHolder1_ctrApplyOnline_lnkAdmissionsInformationStep" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$ctrApplyOnline$lnkAdmissionsInformationStep','')" style="box-sizing: border-box; background: rgb(179, 27, 27); color: rgb(255, 255, 255); text-decoration: none; transition: all 0.2s ease-in 0s; cursor: pointer !important; width: 40px; height: 40px; line-height: 40px; border-radius: 50%; text-align: center; padding: 0px; margin: 0px; display: inline-block;">3</a><p style="box-sizing: border-box; margin: 0px; transition: all 0.2s ease-in 0s; padding: 10px 0px; width: 70px; float: left; text-align: center;">
+                                Step Three</p>
+                        </li>
+                        <li id="ctl00_ContentPlaceHolder1_ctrApplyOnline_liParentInformation" class="" style="box-sizing: border-box; float: left; width: 70px; list-style: none; padding: 0px; margin: 0px 20px; color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+                            <a id="ctl00_ContentPlaceHolder1_ctrApplyOnline_lnkParentInformation" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$ctrApplyOnline$lnkParentInformation','')" style="box-sizing: border-box; background: rgb(229, 229, 229); color: rgb(68, 68, 68); text-decoration: none; transition: all 0.2s ease-in 0s; cursor: pointer !important; width: 40px; height: 40px; line-height: 40px; border-radius: 50%; text-align: center; padding: 0px; margin: 0px; display: inline-block;">4</a><p style="box-sizing: border-box; margin: 0px; transition: all 0.2s ease-in 0s; padding: 10px 0px; width: 70px; float: left; text-align: center;">
+                                Step Four</p>
+                        </li>
+                    </td>
+                </tr>
+                </table>
                     </td>
                 </tr>
                 <tr>
@@ -149,6 +108,14 @@
                     </td>
                     <td>
                         <asp:TextBox ID="txtCity" runat="server" CssClass="auto-style187" Height="35px" Width="503px"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style188">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtSchool" ErrorMessage="please enter name of school" ForeColor="#990000"></asp:RequiredFieldValidator>
+                    </td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtCity" ErrorMessage="please enter city" ForeColor="#990000"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -200,7 +167,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style193">
-                        <asp:TextBox ID="ddlGradyear" runat="server" Height="35px" Width="503px"></asp:TextBox>
+                        <asp:TextBox ID="txtGradyear" runat="server" Height="35px" Width="503px"></asp:TextBox>
                     </td>
                     <td class="auto-style194">
                         <asp:DropDownList ID="ddlGradMonth" runat="server" Height="35px" Width="503px">
@@ -209,6 +176,20 @@
                             <asp:ListItem>Nov</asp:ListItem>
                         </asp:DropDownList>
                     </td>
+                </tr>
+                <tr>
+                    <td class="auto-style193">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtGradyear" ErrorMessage="please enter graduation year" ForeColor="#990000"></asp:RequiredFieldValidator>
+                    </td>
+                    <td class="auto-style194">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style193">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtGradyear" ErrorMessage="Not a valid year" ForeColor="#990000" ValidationExpression="^[1-9]\d*$"></asp:RegularExpressionValidator>
+                    </td>
+                    <td class="auto-style194">
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style188"><span style="color: rgb(68, 68, 68); font-family: arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Faculty Applying for*</span></td>
@@ -255,7 +236,7 @@
                     <td class="auto-style188">&nbsp;</td>
                     <td>
                         <asp:Button ID="btnBack" runat="server" BackColor="#990000" ForeColor="White" OnClick="Button1_Click" Text="Back" Width="65px" />
-&nbsp;<asp:Button ID="btnNext" runat="server" BackColor="#990000" ForeColor="White" Text="Next" Width="65px" />
+&nbsp;<asp:Button ID="btnNext" runat="server" BackColor="#990000" ForeColor="White" Text="Next" Width="65px" OnClick="btnNext_Click" />
                     </td>
                 </tr>
             </table>
