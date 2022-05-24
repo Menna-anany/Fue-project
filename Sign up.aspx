@@ -1,10 +1,23 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Sign up.aspx.cs" Inherits="FUE.Sign_up" %>
-
+<%@Import Namespace="System.Data.SqlClient" %>
 <!DOCTYPE html>
 <script runat="server">
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        //create connection object(between c# and database)
+        SqlConnection conn = new SqlConnection();
+
+        //conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Fue db.mdf;Integrated Security=True";
+        
+        //create indert stat
+        //string strInsert=String.Format("INSERT INTO personal information VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}','{14}'"),ddlSemester.SelectedValue;
+        
+        
+        //conn.Open();  //to open database
+        //conn.Close(); //to close database
+
+        
 
     }
 </script>
@@ -251,16 +264,16 @@
             </tr>
             <tr>
                 <td class="auto-style175" style="color: rgb(68, 68, 68); font-family: Arial; font-size: 13px; font-weight: 400; font-style: normal; text-transform: none">
-                    <asp:TextBox ID="txtFirstName" runat="server" OnTextChanged="TextBox4_TextChanged"></asp:TextBox>
+                    <asp:TextBox ID="txtFirstName" placeholder="First name" runat="server" OnTextChanged="TextBox4_TextChanged"></asp:TextBox>
                 </td>
                 <td class="auto-style174" style="color: rgb(68, 68, 68); font-family: Arial; font-size: 13px; font-weight: 400; font-style: normal; text-transform: none">
-                    <asp:TextBox ID="txtMiddleName1" runat="server" CssClass="auto-style173"></asp:TextBox>
+                    <asp:TextBox ID="txtMiddleName1" placeholder="Middle name 1" runat="server" CssClass="auto-style173"></asp:TextBox>
                 </td>
                 <td class="auto-style194" style="color: rgb(68, 68, 68); font-family: Arial; font-size: 13px; font-weight: 400; font-variant: normal; text-transform: none">
-                    <asp:TextBox ID="txtMiddleName2" runat="server" CssClass="auto-style173"></asp:TextBox>
+                    <asp:TextBox ID="txtMiddleName2" placeholder="Middle name 2" runat="server" CssClass="auto-style173"></asp:TextBox>
                 </td>
                 <td class="auto-style68" style="color: rgb(68, 68, 68); font-family: Arial; font-size: 13px; font-weight: 400; font-variant: normal; text-transform: none">
-                    <asp:TextBox ID="txtLastName" runat="server" OnTextChanged="TextBox9_TextChanged"></asp:TextBox>
+                    <asp:TextBox ID="txtLastName" placeholder="Last name" runat="server" OnTextChanged="TextBox9_TextChanged"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -446,7 +459,9 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style184" colspan="2"></td>
+                <td class="auto-style184" colspan="2">
+                    <asp:Label ID="lblmsg" runat="server" Text="Label"></asp:Label>
+                </td>
                 <td class="auto-style185" colspan="2">
                     <asp:Button ID="btnNext" runat="server" OnClick="Button1_Click" Text="Next" BackColor="#993300" BorderStyle="None" ForeColor="White" Height="30px" Width="64px"/>
                 </td>

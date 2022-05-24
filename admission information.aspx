@@ -61,6 +61,13 @@
         .auto-style8 {
             height: 80px;
         }
+        .auto-style202 {
+            width: 650px;
+            height: 31px;
+        }
+        .auto-style203 {
+            height: 31px;
+        }
         </style>
 </head>
 <body>
@@ -237,6 +244,13 @@
                     <td>
                         <asp:Button ID="btnBack" runat="server" BackColor="#990000" ForeColor="White" OnClick="Button1_Click" Text="Back" Width="65px" />
 &nbsp;<asp:Button ID="btnNext" runat="server" BackColor="#990000" ForeColor="White" Text="Next" Width="65px" OnClick="btnNext_Click" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style202">
+                        <asp:Label ID="lblmsg" runat="server" Text="Label"></asp:Label>
+                    </td>
+                    <td class="auto-style203">
                     </td>
                 </tr>
             </table>

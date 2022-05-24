@@ -336,7 +336,9 @@
                         &nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style15"></td>
+                    <td class="auto-style15">
+                        <asp:Label ID="lblmsg" runat="server" Text="Label"></asp:Label>
+                    </td>
                     <td class="auto-style16">
                         <asp:Button ID="btnBack" runat="server" BackColor="#990000" ForeColor="White" OnClick="Button1_Click" Text="Back" Width="65px" />
 &nbsp;<asp:Button ID="btnNext" runat="server" BackColor="#990000" ForeColor="White" Text="Next" Width="58px" OnClick="btnNext_Click" />

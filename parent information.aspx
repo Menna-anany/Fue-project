@@ -390,7 +390,7 @@
                     </td>
                     <td class="auto-style192" colspan="2">
                         <asp:Button ID="btnBack" runat="server" BackColor="#990000" ForeColor="White" Text="Back" Width="65px" OnClick="btnBack_Click" />
-&nbsp;<asp:Button ID="btnApply" runat="server" BackColor="#990000" ForeColor="White" Text="Apply" Width="65px" />
+&nbsp;<asp:Button ID="btnApply" runat="server" BackColor="#990000" ForeColor="White" Text="Apply" Width="65px" OnClick="btnApply_Click" />
                     </td>
                 </tr>
                 <tr>
@@ -399,6 +399,13 @@
                     </td>
                     <td class="auto-style192" colspan="2">
                         &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style183">
+                        <asp:Label ID="lblmsg" runat="server" Text="Label"></asp:Label>
+                    </td>
+                    <td class="auto-style192" colspan="2">
+                        </td>
                 </tr>
             </table>
         </div>

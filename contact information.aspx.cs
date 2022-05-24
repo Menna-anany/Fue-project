@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
 
 namespace FUE
 {
@@ -46,6 +47,34 @@ namespace FUE
 
             Response.Redirect("admission information.aspx");
 
+
+            SqlConnection conn = new SqlConnection();
+            conn.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename =|DataDirectory| Fue db.mdf; Integrated Security = True";
+            String strInsert = String.Format("INSERT INTO [dbo].[data] VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}')", ddlCountry.SelectedValue, txtAddress.Text, txtBuilding.Text, txtStreet.Text, txtApt.Text, txtDistrict.Text, txtTelephone.Text, txtCity.Text, txtTelephone.Text, txtStudentMobile.Text, txtEmail.Text, txtReenterEmail.Text, ddlSiblings.SelectedValue);
+
+            try
+            {
+
+                SqlCommand cmd = new SqlCommand(strInsert, conn);
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+
+
+
+            }
+
+            catch (SqlException err)
+            {
+                if (err.Number == 2627)
+                {
+                    lblmsg.Text = "This user username " + txtEmail.Text + "is already used";
+                }
+                else
+                    lblmsg.Text = "database error ";
+
+
+
+            }
         }
-    }
 }
